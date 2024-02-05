@@ -7,24 +7,28 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="home">
-    <main>
+    <a class="btn download-link" href="bongo.cat">download pdf!</a>
+    <main class="content-wrapper">
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
       <div class="content-wrapper">
+        <div class="content-bg">
           <header>
+          <div class="content-wrapper">
             <h1>Ian Meglaughlin</h1>
             <h2>Multimedia Designer & Creative Director</h2>
+          </div>
 
             <p>Ian Meglaughlin is an artist with an area of expertise in sound design who is based in Raleigh, NC.</p>
             <p>As a multimedia designer and creative director, Meglaughlin shows up in their work with the understanding that everything has its own motif, which communicates the intention of its design.</p>
           </header>
 
           <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-          <section>
+          <section class="resume-section">
             <h2>Selected Works</h2>
             <p>Recent selected projects below. More information can be found at <a href="http://avreniminerva.neocities.org">AVRENIMINERVA</a>.</p>
 
             <!-- Copy the whole <section> block to add more projects. -->
-            <section>
+            <section class="project-item">
               <h3>placeholder</h3>
               <img src="images/thumbnail-3.jpg" alt="placeholder">
               <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
@@ -34,15 +38,18 @@
           </section>
 
           <!-- ***********************  WORK EXPERIENCE  *********************** -->
-          <section>
+          <section class="resume-section">
             <h2>Work Experience</h2>
             <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
 
             <!-- Copy this whole <section> block to add more jobs. -->
-            <section>
+            <section class="work-item">
+              <div class="work-details">
               <h3>Audio Technician</h3>
               <p>[REDACTED] PRODUCTIONS</p>
               <p>2019-current</p>
+            </div>
+            <div class="work-summary">
               <p>Music composition and sound engineering for artist [REDACTED] and other collaborative acts.</p>
               <p>ACCOLADES:</p>
               <ul>
@@ -50,13 +57,17 @@
                 <li>Lead and facilitated recording sessions for groups of up to 5 artists </li>
                 <li>Responsible for the commerically competitive and high quality production for artists working with [REDACTED] Productions</li>
               </ul>
+            </div>
             </section>
 
-            <section>
-              <h3>Creative Director</h3>
-              <p>[REDACTED] LTD.</p>
-              <p>2019-current</p>
-              <p>Job summary goes here. Add as many paragraphs as you need.</p>
+            <section class="work-item">
+              <div class="work-details">
+                <h3>Creative Director</h3>
+                <p>[REDACTED] LTD.</p>
+                <p>2019-current</p>
+            </div>
+            <div class="work-summary">
+                <p>Job summary goes here. Add as many paragraphs as you need.</p>
               <p>Optional list:</p>
               <ul>
                 <li>Delete this list if you don't need it.</li>
@@ -64,12 +75,13 @@
                 <li>Lead...</li>
                 <li>Responsible for...</li>
               </ul>
+            </div>
             </section>
             <!-- End of Job block. -->
           </section>
 
           <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-          <section>
+          <section class="resume-section">
             <h2>Education</h2>
 
             <!-- Copy this whole <section> block to add more schools. -->
@@ -88,19 +100,23 @@
           <!-- End of School block. -->
         </section>
       </div>
+    </div>  
+
+    </main>
       <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
       <footer>
-        <h2>Let's Keep in Touch!</h2>
+        <h2>Let's Keep in Touch! | <a href="mailto:email@example.com">email@example.com</a></h2>
+        
 
         <!-- Social media and contact links. Add or remove any networks. -->
-        <ul>
-          <li><a href="mailto:email@example.com">email@example.com</a></li>
+        <ul class="socials">
+         
           <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li>
           <li><a href="#" target="_blank">Twitter</a></li>
           <li><a href="#" target="_blank">LinkedIn</a></li>
           <li><a href="#" target="_blank">Facebook</a></li>
         </ul>
       </footer>
-    </main>
+    
   </body>
 </html>

@@ -16,9 +16,24 @@ $cobalt-blue: rgba(0, 71, 173, 1);
 /* GLOBAL STYLES 
 --------------------------------------- */
 
+/*
+    https://paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
 
 background: #eaff3eff;
+margin: 0;
 }
 
 /* links */
@@ -41,19 +56,60 @@ footer a:hover {
     color: #eaff3eff;
 }
 
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
 /* HOME
 --------------------------------------- */
 .home {
     background-image: url(../images/annie-spratt-unsplash.jpg)  ;
     background-size: cover;
-
+    display: flex;
+    flex-direction: column;
 }
 .home .content-wrapper {
-    background: rgb(234 255 62 / 0.3);
-
+  
+    flex: 1 0 auto;
 }
-
+.content-bg {
+    background: rgb(234 255 62 / 0.3);
+    padding: 30px;
+}
 /* RESUME
+--------------------------------------- */
+.resume-section {
+    margin-bottom: 50px;
+}
+.resume-section h2 {
+    border-bottom: 2px dotted #0047adff;    ;
+}
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+/* PROJECTS
+--------------------------------------- */
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+}
+.project-item img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+/* WORK EXPERIENCE
+--------------------------------------- */
+.work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+}
+/* EDUCATION
 --------------------------------------- */
 
 
@@ -62,4 +118,21 @@ footer a:hover {
 footer {
     background: #000815ff ;
     color: #b3eaffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+.socials li {
+    display: inline-block;
+    margin-left: 10px;
+}
+.socials img {
+    width: 32px;
+}
+.socials img:hover {
+    opacity: 0.5;
 }
